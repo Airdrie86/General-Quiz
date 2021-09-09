@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Online Quiz</title>
 </head>
 <body>
     <div class="main">
         <p>Welcome to the Ultimate Online Quiz!</p>
-        <div id="question box" class="hide">
+        <div id="choice-box" class="hide">
+           <div id="choice"> Please Choose A Catogory Below</div> 
+           <div id="choice-selection" class="Catogory">
+               <button class="cat-btn">Sport</button>
+               <button class="cat-btn">General Knowledge</button>
+               <button class="cat-btn">Geography</button>
+           </div>    
+        </div>
+
+        <div class="play">
+            <button id="start-btn"  class="start">Start</button>
+        </div>
+
+        <div id="question-box" class="hide">
             <div id="questions">Question</div>
             <div id="answer" class="answer-btn">
                 <button class="btn">Answer 1</button>
@@ -20,8 +33,7 @@
             </div>
         </div>
 
-        <div></div>
-
+      
     </div>
     <script src="script.js"></script>
 </body>
