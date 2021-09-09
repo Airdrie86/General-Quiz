@@ -31,6 +31,10 @@ body {
     border: none;
 }
 
+.start:hover {
+    border: none;
+}
+
 .cat-btn { 
     border-radius: 5px;
     border: 1px solid;
