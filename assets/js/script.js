@@ -44,7 +44,7 @@ let sportQuestions = [
         Question: "What is Usain Bolt’s 100m world record time?",
         Answer: [
             {text: "9.62", correct: false},
-            {text: "9.58", correct: true,
+            {text: "9.58", correct: true},
             {text: "9.65", correct: false},
             {text: "9.55", correct: false},
         ]
