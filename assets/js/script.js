@@ -14,9 +14,9 @@ function startGame() {
     choiceButton.classList.remove("hide")
 }
 
-let maxQuestions = 4
 
-sportButton.addEventListener("click", sportGame )
+sportButton.addEventListener("click", sportGame)
+
 function sportGame() {
     
 }
@@ -38,6 +38,42 @@ let sportQuestions = [
             {text: "TPC Sawgrass", correct: false},
             {text: "Masters", correct: true},
             {text: "Torrey Pines", correct: false},
+        ]
+    },
+    {
+        Question: "What is Usain Bolt’s 100m world record time?",
+        Answer: [
+            {text: "9.62", correct: false},
+            {text: "9.58", correct: true,
+            {text: "9.65", correct: false},
+            {text: "9.55", correct: false},
+        ]
+    },
+    {
+        Question: "Which cricket club plays at The Oval?",
+        Answer: [
+            {text: "Yorkshire", correct: false},
+            {text: "Hampshire", correct: false},
+            {text: "Surrey", correct: true},
+            {text: "Lancashire", correct: false},
+        ]
+    },
+    {
+        Question: "Which country’s rugby team is called The Springboks?",
+        Answer: [
+            {text: "New Zealand", correct: false},
+            {text: "South Africa", correct: true},
+            {text: "Fiji", correct: false},
+            {text: "Austrailia", correct: false},
+        ]
+    },
+    {
+        Question: "The The Pittsburgh Penguins play which sport?",
+        Answer: [
+            {text: "Baseball", correct: false},
+            {text: "American Football", correct: false},
+            {text: "Basketball", correct: false},
+            {text: "Ice Hockey", correct: true},
         ]
     },
 ]
