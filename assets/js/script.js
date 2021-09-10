@@ -5,21 +5,7 @@ let geographyButton = document.getElementById("geography");
 let generalKnowledgeButton = document.getElementById("general-knowledge");
 let questionBox = document.getElementById("question-box");
 let welcome = document.getElementById("welcome");
-
-startButton.addEventListener("click", startGame)
-
-function startGame() {
-    startButton.classList.add("hide")
-    welcome.classList.add("hide")
-    choiceButton.classList.remove("hide")
-}
-
-
-sportButton.addEventListener("click", sportGame)
-
-function sportGame() {
-    
-}
+let questions = document.getElementById("questions")
 
 let sportQuestions = [
     {
@@ -77,3 +63,28 @@ let sportQuestions = [
         ]
     },
 ]
+
+startButton.addEventListener("click", startGame)
+
+function startGame() {
+    startButton.classList.add("hide")
+    welcome.classList.add("hide")
+    choiceButton.classList.remove("hide")
+}
+
+let currentQuestion = {}
+let sQuestion = [...sportQuestions]
+let maxQuestions = 5
+let questionIndex = Math.floor(Math.random() * sQuestion.length)
+
+sportButton.addEventListener("click", sportGame)
+
+function sportGame() {
+    questionBox.classList.remove("hide")
+    choiceButton.classList.add("hide")
+    currentQuestion = sQuestion[questionIndex]
+    questions.innerText = sQuestion.Question
+}
+console.log(questionIndex);
+console.log(currentQuestion);
+console.log(sQuestion);
